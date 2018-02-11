@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-profile text-center">
+                    <div class="profile-container bg-primary">
+                        <img class="card-img-top rounded-circle profile-image" src="{{ url_for('static', filename='image2.jpg') }}" alt="Profile">
+                        <br>
+                        <div class="profile-info mb-2">
+                            <strong class="profile-name">Harry Potter</strong>
+                            <div>@harryjpotter</div>
+                            <div>Hagrid Hut, Hogwarts</div>
+                            <div>Joined {{ date_joined }}</div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="profile-description">Lorem ipsum</p>
+                        <div class="mb-3">
+                            <div class="row stats">
+                                <div class="col">89</div>
+                                <div class="col">299</div>
+                                <div class="col">300</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">POSTS</div>
+                                <div class="col">Following</div>
+                                <div class="col">Followers</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
